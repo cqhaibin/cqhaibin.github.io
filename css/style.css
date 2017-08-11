@@ -1,3 +1,244 @@
 html body {
   height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: background-color-light;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  clear: both;
+}
+.header {
+  color: #fff;
+}
+.header-menu {
+  height: 60px;
+  background-color: #1c2438;
+  animation: header-menu 2s;
+}
+.header-menu .main-nav {
+  height: 60px;
+  line-height: 60px;
+  margin-left: 10px;
+}
+.header-menu .main-nav-item {
+  text-decoration: none;
+  color: #fff;
+  vertical-align: middle;
+  margin: 0px 6px;
+  transition: color 0.3s;
+}
+.header-menu .main-nav-item:hover,
+.header-menu .main-nav-item.active {
+  color: #657180;
+}
+.header-inner {
+  color: #000;
+}
+@-moz-keyframes header-menu {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes header-menu {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@-o-keyframes header-menu {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes header-menu {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.banner-block {
+  height: 240px;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+.banner-item {
+  position: relative;
+  opacity: 0;
+  animation: banner-item 2s 2s forwards;
+  margin: 0px;
+  padding: 0px;
+  height: inherit;
+  list-style-type: none;
+  color: #fff;
+}
+.banner-item img {
+  height: inherit;
+  width: 100%;
+}
+.banner-item h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -10px;
+  font-size: 20px;
+}
+@-moz-keyframes banner-item {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes banner-item {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-o-keyframes banner-item {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes banner-item {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.wrap {
+  overflow: hidden;
+}
+.cont-block {
+  position: relative;
+  margin-top: 20px;
+  opacity: 0;
+  animation: cont-block 2s 2s forwards;
+}
+.stick-list {
+  margin: 0px auto;
+  padding: 0px;
+}
+.stick-item {
+  list-style-type: none;
+  float: left;
+  width: 180px;
+  height: 240px;
+  background: #495060;
+  margin-left: 200px;
+  color: #fff;
+  box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.4);
+  border-radius: 3px;
+  perspective: 720px;
+  position: relative;
+  z-index: 100;
+}
+.stick-item .top-block {
+  border-radius: 3px;
+  position: absolute;
+  z-index: 1;
+  width: inherit;
+  height: 100%;
+  background: #1c2438;
+  text-align: center;
+}
+.stick-item .top-block .top-cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.stick-item .top-block .top-cont p {
+  margin: 0px;
+  padding: 0px;
+}
+.stick-item .explain {
+  position: absolute;
+  z-index: 0;
+  width: inherit;
+  height: 100%;
+  padding: 10px 0px 0px 10px;
+}
+.stick-item .explain .link {
+  position: absolute;
+  right: 30px;
+  text-decoration: none;
+  color: #2b85e4;
+}
+.stick-item .explain .link:hover {
+  color: #5cadff;
+}
+.stick-item .top-block {
+  transform-origin: 0 50%;
+  transform: rotateY(0deg);
+  transition: all 2s;
+}
+.stick-item:hover .top-block {
+  transform: rotateY(-180deg);
+}
+@-moz-keyframes cont-block {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes cont-block {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-o-keyframes cont-block {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes cont-block {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
