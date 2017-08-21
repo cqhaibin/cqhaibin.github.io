@@ -20,17 +20,17 @@ html body {
   color: #fff;
 }
 @media screen and (max-height: 768px) {
-  .header {
+  .header-inner {
     height: 50%;
   }
 }
 @media screen and (min-height: 768px) and (max-height: 1440px) {
-  .header {
+  .header-inner {
     height: 55%;
   }
 }
 @media screen and (min-height: 1440px) {
-  .header {
+  .header-inner {
     height: 60%;
   }
 }
@@ -60,7 +60,6 @@ html body {
 .header-inner {
   color: #000;
   margin-top: -60px;
-  height: 100%;
 }
 @-moz-keyframes header-menu {
   from {
@@ -95,7 +94,7 @@ html body {
   }
 }
 .banner-block {
-  height: inherit;
+  height: 100%;
   overflow: hidden;
   margin: 0px;
   padding: 0px;
@@ -267,4 +266,300 @@ html body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.offset-5-1 {
+  padding-left: 5px;
+}
+.offset-5-2 {
+  padding-left: 10px;
+}
+.offset-5-3 {
+  padding-left: 15px;
+}
+.offset-5-4 {
+  padding-left: 20px;
+}
+.offset-5-5 {
+  padding-left: 25px;
+}
+.offset-5-6 {
+  padding-left: 30px;
+}
+.offset-5-7 {
+  padding-left: 35px;
+}
+.offset-5-8 {
+  padding-left: 40px;
+}
+.offset-5-9 {
+  padding-left: 45px;
+}
+.offset-5-10 {
+  padding-left: 50px;
+}
+.offset-10-1 {
+  padding-left: 10px;
+}
+.offset-10-2 {
+  padding-left: 20px;
+}
+.offset-10-3 {
+  padding-left: 30px;
+}
+.offset-10-4 {
+  padding-left: 40px;
+}
+.offset-10-5 {
+  padding-left: 50px;
+}
+.offset-10-6 {
+  padding-left: 60px;
+}
+.offset-10-7 {
+  padding-left: 70px;
+}
+.offset-10-8 {
+  padding-left: 80px;
+}
+.offset-10-9 {
+  padding-left: 90px;
+}
+.offset-10-10 {
+  padding-left: 100px;
+}
+.offset-15-1 {
+  padding-left: 15px;
+}
+.offset-15-2 {
+  padding-left: 30px;
+}
+.offset-15-3 {
+  padding-left: 45px;
+}
+.offset-15-4 {
+  padding-left: 60px;
+}
+.offset-15-5 {
+  padding-left: 75px;
+}
+.offset-15-6 {
+  padding-left: 90px;
+}
+.offset-15-7 {
+  padding-left: 105px;
+}
+.offset-15-8 {
+  padding-left: 120px;
+}
+.offset-15-9 {
+  padding-left: 135px;
+}
+.offset-15-10 {
+  padding-left: 150px;
+}
+.layout-wrap {
+  margin: 0px;
+  padding: 0px;
+  height: inherit;
+}
+.layout-wrap .layout-main {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.layout-wrap .layout-main .layout-cont {
+  margin: 0px;
+  padding: 5px;
+  margin-right: 200px;
+  border-right: 1px solid #5cadff;
+}
+.layout-wrap .layout-right {
+  position: relative;
+  float: left;
+  height: inherit;
+  width: 200px;
+  margin-left: -200px;
+}
+.title-list {
+  position: fixed;
+  margin: 0px;
+  padding: 10px 0px 0px 0px;
+}
+.title-list .title-item {
+  margin: 0px 0px 5px 0px;
+  list-style-type: none;
+}
+.title-list .title-item a,
+.title-list .title-item a:hover,
+.title-list .title-item a:active {
+  text-decoration: none;
+  color: #2d8cf0;
+}
+.title-list .title-item a:hover {
+  color: #2b85e4;
+}
+.article-entry pre,
+.article-entry .highlight {
+  background: #2d2d2d;
+  margin: 0 -1;
+  padding: 15px 1;
+  border-style: solid;
+  border-color: color-border;
+  border-width: 1px 0;
+  overflow: auto;
+  color: #ccc;
+  line-height: 22.400000000000002px;
+}
+.article-entry .highlight .gutter pre,
+.article-entry .gist .gist-file .gist-data .line-numbers {
+  color: #666;
+  font-size: 0.85em;
+}
+.article-entry pre,
+.article-entry code {
+  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+}
+.article-entry code {
+  background: #fff;
+  text-shadow: 0 1px #fff;
+  padding: 0 0.3em;
+}
+.article-entry pre code {
+  background: none;
+  text-shadow: none;
+  padding: 0;
+}
+.article-entry .highlight pre {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.article-entry .highlight table {
+  margin: 0;
+  width: auto;
+}
+.article-entry .highlight td {
+  border: none;
+  padding: 0;
+}
+.article-entry .highlight figcaption {
+  font-size: 0.85em;
+  color: #999;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+.article-entry .highlight figcaption a {
+  float: right;
+}
+.article-entry .highlight .gutter pre {
+  text-align: right;
+  padding-right: 20px;
+}
+.article-entry .highlight .line {
+  height: 22.400000000000002px;
+}
+.article-entry .highlight .line.marked {
+  background: #515151;
+}
+.article-entry .gist {
+  margin: 0 -1;
+  border-style: solid;
+  border-color: color-border;
+  border-width: 1px 0;
+  background: #2d2d2d;
+  padding: 15px 1 15px 0;
+}
+.article-entry .gist .gist-file {
+  border: none;
+  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  margin: 0;
+}
+.article-entry .gist .gist-file .gist-data {
+  background: none;
+  border: none;
+}
+.article-entry .gist .gist-file .gist-data .line-numbers {
+  background: none;
+  border: none;
+  padding: 0 20px 0 0;
+}
+.article-entry .gist .gist-file .gist-data .line-data {
+  padding: 0 !important;
+}
+.article-entry .gist .gist-file .highlight {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.article-entry .gist .gist-file .gist-meta {
+  background: #2d2d2d;
+  color: #999;
+  font: 0.85em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: 0 0;
+  padding: 0;
+  margin-top: 1em;
+  margin-left: 1;
+}
+.article-entry .gist .gist-file .gist-meta a {
+  color: color-link;
+  font-weight: normal;
+}
+.article-entry .gist .gist-file .gist-meta a:hover {
+  text-decoration: underline;
+}
+pre .comment,
+pre .title {
+  color: #999;
+}
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #f2777a;
+}
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant {
+  color: #f99157;
+}
+pre .class,
+pre .ruby .class .title,
+pre .css .rules .attribute {
+  color: #9c9;
+}
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata {
+  color: #9c9;
+}
+pre .css .hexcolor {
+  color: #6cc;
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #69c;
+}
+pre .keyword,
+pre .javascript .function {
+  color: #c9c;
 }
