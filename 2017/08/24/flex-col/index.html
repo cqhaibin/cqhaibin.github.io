@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/skins/mmain.css">
+</head>
+<body>
+<div class="header">
+  <div class="header-menu">
+      <nav class="main-nav" >
+          
+              <a class="main-nav-item" href="/" target="_blank" >首页</a>
+          
+              <a class="main-nav-item" href="/vueManager/core/index.html" target="_blank" >框架</a>
+          
+              <a class="main-nav-item" href="/tomatotimer/index.html" target="_blank" >蕃茄工作法</a>
+          
+      </nav>
+  </div>
+</div>
+  <div class="layout-wrap clearfix">
+    <div class="layout-main">
+        <div class="layout-cont article-entry">
+            <h1 id="分栏布局说明"><a href="#分栏布局说明" class="headerlink" title="分栏布局说明"></a>分栏布局说明</h1><p>由于移动端屏幕尺寸较小，所以只分了四栏；但分为三种情况：</p>
+<h2 id="简单应用介绍"><a href="#简单应用介绍" class="headerlink" title="简单应用介绍"></a>简单应用介绍</h2><p>分栏布局首选需要<code>.flex-wrap</code>进行包装，然后利用可以使用<code>flex-col-*-*</code>来定义每个栏的宽度。</p>
+<p><div class="flex-wrap"><br>        <div class="flex-col-1-4 block-container block-primary-norm">1-4</div><br>        <div class="flex-col-1-4 block-container block-primary-dark">1-4</div><br>        <div class="flex-col-1-4 block-container block-primary-norm">1-4</div><br>        <div class="flex-col-1-4 block-container block-primary-dark">1-4</div><br>        <div class="flex-col-1-3 block-container block-aux-level04">1-3</div><br>        <div class="flex-col-1-3 block-container block-aux-level02">1-3</div><br>        <div class="flex-col-1-3 block-container block-aux-level03">1-3</div><br>        <div class="flex-col-1-2 block-container block-comm-level01">1-2</div><br>        <div class="flex-col-1-2 block-container block-comm-level02">1-2</div><br>        <div class="flex-col-1-1 block-container block-comm-level03">1-1</div><br></div><br>代码如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-wrap"</span> &gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-col-1-4 block-container block-primary-norm"</span>&gt;</span>1-4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-col-1-4 block-container block-primary-dark"</span>&gt;</span>1-4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-col-1-4 block-container block-primary-norm"</span>&gt;</span>1-4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-col-1-4 block-container block-primary-dark"</span>&gt;</span>1-4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-col-1-3 block-container block-aux-level04"</span>&gt;</span>1-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-col-1-3 block-container block-aux-level02"</span>&gt;</span>1-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-col-1-3 block-container block-aux-level03"</span>&gt;</span>1-3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-col-1-2 block-container block-comm-level01"</span>&gt;</span>1-2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-col-1-2 block-container block-comm-level02"</span>&gt;</span>1-2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-col-1-1 block-container block-comm-level03"</span>&gt;</span>1-1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h2 id="对齐方式"><a href="#对齐方式" class="headerlink" title="对齐方式"></a>对齐方式</h2><table>
+<thead>
+<tr>
+<th>类名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>horizontal-left</td>
+<td>水平居左</td>
+</tr>
+<tr>
+<td>horizontal-center</td>
+<td>水平居中</td>
+</tr>
+<tr>
+<td>horizontal-right</td>
+<td>水平居右</td>
+</tr>
+<tr>
+<td>vertical-top</td>
+<td>垂直居顶</td>
+</tr>
+<tr>
+<td>vertical-center</td>
+<td>垂直居中</td>
+</tr>
+<tr>
+<td>vertical-bottom</td>
+<td>垂直居底      </td>
+</tr>
+</tbody>
+</table>
+<p>实现对齐效果，需要在<code>.row</code>行上添加上述表格的类名。</p>
+<p><section><br>        <div class="flex-wrap"><br>                <div class="row horizontal-left"><br>                        <div class="flex-col-1-4 block-container block-primary-norm">left</div><br>                </div><br>                <div class="row horizontal-center"><br>                        <div class="flex-col-1-4 block-container block-primary-norm">center</div><br>                </div><br>                <div class="row horizontal-right"><br>                        <div class="flex-col-1-4 block-container block-primary-norm">right</div><br>                </div><br>                <div class="row vertical-top block-comm-level06" style="height: 100px;"><br>                        <div class="flex-col-1-4 block-container block-primary-norm">top</div><br>                </div><br>                <div class="row vertical-center block-comm-level05" style="height: 100px;"><br>                        <div class="flex-col-1-4 block-container block-primary-norm">center</div><br>                </div><br>                <div class="row vertical-bottom block-comm-level04" style="height: 100px;"><br>                        <div class="flex-col-1-4 block-container block-primary-norm">bottom</div><br>                </div><br>        </div><br></section><br>源码如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-wrap"</span> &gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row horizontal-left"</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-col-1-4 block-container block-primary-norm"</span>&gt;</span>left<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row horizontal-center"</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-col-1-4 block-container block-primary-norm"</span>&gt;</span>center<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row horizontal-right"</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-col-1-4 block-container block-primary-norm"</span>&gt;</span>right<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row vertical-top block-comm-level06"</span> <span class="attr">style</span>=<span class="string">"height: 100px;"</span> &gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-col-1-4 block-container block-primary-norm"</span>&gt;</span>top<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row vertical-center block-comm-level05"</span> <span class="attr">style</span>=<span class="string">"height: 100px;"</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-col-1-4 block-container block-primary-norm"</span>&gt;</span>center<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row vertical-bottom block-comm-level04"</span> <span class="attr">style</span>=<span class="string">"height: 100px;"</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"flex-col-1-4 block-container block-primary-norm"</span>&gt;</span>bottom<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
+
+        </div>
+    </div>
+    <div class="layout-right">
+        <ul class="title-list clearfix" >
+            
+                <li class="title-item offset-10-1" ><a href="#分栏布局说明" >分栏布局说明</a></li>
+            
+                <li class="title-item offset-10-2" ><a href="#简单应用介绍" >简单应用介绍</a></li>
+            
+                <li class="title-item offset-10-2" ><a href="#对齐方式" >对齐方式</a></li>
+            
+        </ul>
+    </div>
+</div>
+</body>
+</html>
